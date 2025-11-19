@@ -1,0 +1,8 @@
+Download the .zip version of the project.
+Import it as an existing maven project in any IDE.
+Run as Java application.
+
+--For additional logging, change the logging levels in src/main/resources/log4j2.xml as follows -
+ <Root level="xxxxx">
+
+Logging levels - INFO, DEBUG, WARN, ERROR, TRACE
