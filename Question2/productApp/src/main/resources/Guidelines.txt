@@ -1,0 +1,23 @@
+To run this application, please follow below steps -
+Step 1) Download the zip from GitHub to your machine.
+Step 2) Extract & import the project as an Existing Maven Project in your IDE.
+Step 3) Build the project to resolve all maven dependencies.
+Step 4) Install & Launch Docker Desktop. Skip installation if already installed.
+Step 5) Run the Docker compose command
+		docker compose up -d
+		Ex. For Windows, navigate to location "productApp\src\main\resources\database\" in the downloaded project. 
+		Open Command Prompt/Powershell & run the above command.
+Step 6) Once docker is up and running, go to http://localhost:8081 on your browser & login to pgAdmin4.
+Step 7) Add a new server with following details 
+		name - localPostgres
+		host - host.docker.internal
+		DB - test
+		username - root
+		password - 1234
+		Click on Save.
+Step 8) Run the application as Java application.
+Step 9) Once application launches successfully, navigate to http://localhost:8080/swagger-ui/index.html/ on your browser.
+		You can trigger any API from this UI.
+Step 10) Terminate the Java application & bring the Docker down by running following command.
+		docker compose down
+
