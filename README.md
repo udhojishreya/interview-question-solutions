@@ -23,18 +23,27 @@ Step 3) Build the project to resolve all maven dependencies.
 Step 4) Install & Launch Docker Desktop. Skip installation if already installed.
 
 Step 5) Run the Docker compose command
+
 		docker compose up -d
+		
 		Ex. For Windows, navigate to location "productApp\src\main\resources\database\" in the downloaded project. 
+		
 		Open Command Prompt/Powershell & run the above command.
 
 Step 6) Once docker is up and running, go to http://localhost:8081 on your browser & login to pgAdmin4.
 
-Step 7) Add a new server with following details 
+Step 7) Add a new server with following details -
+		
 		name - localPostgres
+		
 		host - host.docker.internal
+		
 		DB - test
+		
 		username - root
+		
 		password - 1234
+		
 		Click on Save.
 
 Step 8) Run the application as Java application.
